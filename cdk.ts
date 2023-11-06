@@ -5,14 +5,12 @@ import * as cloudfront from "aws-cdk-lib/aws-cloudfront";
 import * as origins from "aws-cdk-lib/aws-cloudfront-origins";
 
 const app = new cdk.App();
-const stack = new cdk.Stack(app, "MyShopClouFrontStack", {
+const stack = new cdk.Stack(app, "MyShopClouFrontStack1", {
   env: { region: "eu-west-1" },
 });
 
 const bucket = new s3.Bucket(stack, "WebAppBucket", {
   bucketName: "asgrm-nodejs-aws-shop-react",
-  websiteIndexDocument: "index.html",
-  publicReadAccess: false, // blocks access by default
   autoDeleteObjects: true,
   blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
   removalPolicy: cdk.RemovalPolicy.DESTROY,
@@ -20,10 +18,7 @@ const bucket = new s3.Bucket(stack, "WebAppBucket", {
 
 const originAccessIdentity = new cloudfront.OriginAccessIdentity(
   stack,
-  "ShopBucketIdentity",
-  {
-    comment: bucket.bucketName,
-  }
+  "ShopBucketIdentity"
 );
 
 bucket.grantRead(originAccessIdentity);
