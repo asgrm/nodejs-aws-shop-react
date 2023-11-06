@@ -28,7 +28,7 @@
   },
   "include": [
     "src",
-    "./cdk.ts"
+    "cdk.ts"
   ],
   "references": [
     {
