@@ -17,9 +17,11 @@ This is frontend starter project for nodejs-aws mentoring program. It uses the f
 
 ## Deploy links
 
-> CloudFront Url : <https://d1qosj6weyyqtz.cloudfront.net>
+> task 2.1 CloudFront Url : <https://d87hjtgy5djmb.cloudfront.net>
 >
-> task 2.1 S3 bucket link (supposed to be accessable): <https://nodejs-aws-shop-react-asgrm.s3.eu-west-1.amazonaws.com/index.html>
+> task 2.1 S3 bucket public link (supposed to be accessable): <https://nodejs-aws-shop-react-asgrm.s3.eu-west-1.amazonaws.com/index.html>
+>
+> task 2.2 CloudFront Url : <https://d1qosj6weyyqtz.cloudfront.net>
 >
 > task 2.2 S3 bucket link (supposed to returns 403 Access Denied error) <https://asgrm-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html>
 
