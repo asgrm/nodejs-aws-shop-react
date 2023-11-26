@@ -13,7 +13,7 @@
     "prettier": "prettier src --write",
     "cdk": "cdk",
     "cdk:bootstrap": "npx cdk bootstrap",
-    "cdk:deploy": "npx cdk deploy",
+    "cdk:deploy": "npm run build && npx cdk deploy",
     "cdk:destroy": "npx cdk destroy"
   },
   "dependencies": {
